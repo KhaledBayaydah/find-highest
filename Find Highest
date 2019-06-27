@@ -1,0 +1,21 @@
+
+/**
+ * It gives the highest temperature the correlative month of that temp
+ * @Khaled AlBayaydah
+ * @Jun2 26th, 2019
+ */
+public class Find_Heighst
+{
+public static void main(String args[]){
+    String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"};
+    String month_array=months[0];
+    int[] temps = {34, 32, 40, 50, 55, 70, 73, 75, 70, 65, 55, 40};
+    int heighst_array=temps[0];
+    for(int i=0; i<temps.length; i++){
+    if (temps[i]>heighst_array) {
+        heighst_array = temps[i];
+        month_array=months[i];}
+}
+    System.out.println(month_array+"-"+heighst_array);
+}
+}
